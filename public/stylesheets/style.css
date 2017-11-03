@@ -1,0 +1,101 @@
+:root {
+  --site-bg-color: lightgrey;   /* var(--site-bg-color)  */
+  --text-bg-color: white;       /* var(--text-bg-color)  */
+  --border-color: black;        /* var(--border-color)   */
+  --text-color: black;          /* var(--text-color)     */
+  --link-hovor: #00B7FF;        /* var(--link-hover)     */
+  --cancel-color: crimson;      /* var(--cancel-color)   */
+}
+
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: var(--site-bg-color);
+}
+
+#icon {
+  height: 20pt;
+  width: 20pt;
+}
+
+#title-bar li {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 20pt;
+  margin-bottom: .5em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--link-hovor);
+}
+
+.card {
+  border: 2px solid var(--border-color);
+  background-color: var(--text-bg-color);
+  margin: 3em auto;
+  padding: 1em;
+  width: 30em;
+}
+
+.card input[type='number'] {
+  width: 23em;
+
+}
+
+.card input[type='text'] {
+    width: 23em;
+
+}
+
+.right {
+  float: right;
+}
+
+.submit {
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  color: var(--link-hovor);
+}
+
+.clear {
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  color: var(--cancel-color);
+}
+
+.submit:hover {
+  color: var(--text-color);
+}
+
+.clear:hover {
+  color: var(--text-color);
+}
+
+#con_labl {
+  margin-left: 3.35em;
+}
+
+#to_currency input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#to_currency input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#to_currency input[type="number"] {
+  -moz-appearance: textfield;
+}
